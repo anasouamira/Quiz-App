@@ -1,26 +1,21 @@
 # MyCalculatorApp
 
-MyCalculatorApp is a simple Android calculator application built with Kotlin.  
-It allows users to perform basic arithmetic operations with a clean and intuitive interface.
+About
+The Quiz App is a fun game that asks questions about countries.
+You can test your knowledge about capitals, flags, and famous places.
 
 ---
+## 📱 Screenshots
 
+<img src="app/screenshot.jpg" width="200"/>
+
+---
 ## 🛠 Features
-
 - Add, subtract, multiply, divide
 - Supports negative numbers
 - Clear button to reset calculations
 - Simple and responsive UI
-- Works on Android 6.0+ devices
-
 ---
-
-## 📱 Screenshots
-
-![Calculator Main Screen](https://via.placeholder.com/200x400?text=Calculator+Screen)
-
----
-
 ## ⚙️ Installation
 
 1. Clone the repository:
