@@ -7,7 +7,7 @@ You can test your knowledge about capitals, flags, and famous places.
 ---
 ## 📱 Screenshots
 
-<img src="Screenshot.jpg" width="200" alt=""/>
+<img src="" width="200" alt=""/>
 
 ---
 ## 🛠 Features
