@@ -6,7 +6,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--TODO (STEP 1: Change the theme colors as per our requirement.)-->
-    <color name="colorPrimary">#FF9013FE</color>
-    <color name="colorPrimaryDark">#FF6A1B9A</color>
+    <color name="colorPrimary">#BD72FF</color>
+    <color name="colorPrimaryDark">#AE2EFF</color>
     <color name="colorAccent">#FF9013FE</color>
 </resources>
