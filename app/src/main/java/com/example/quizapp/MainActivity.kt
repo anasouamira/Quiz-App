@@ -2,11 +2,13 @@ package com.example.quizapp
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,8 +23,12 @@ class MainActivity : AppCompatActivity() {
             WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
 
         val btnStart : Button = findViewById(R.id.btnStart)
+        val etName : TextInputEditText = findViewById(R.id.et_name)
 
         btnStart.setOnClickListener {
+            if (etName.text.isNullOrEmpty()){
+                Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show()
+            }
 
         }
 
