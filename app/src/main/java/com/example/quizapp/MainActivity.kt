@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -28,7 +29,11 @@ class MainActivity : AppCompatActivity() {
 
         btnStart.setOnClickListener {
             if (etName.text.isEmpty()){
-                Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "set your name", Toast.LENGTH_SHORT).show()
+            }else{
+                val intent = Intent(this , QuizQuestionsActivity::class.java)
+                startActivity(intent)
+                finish()
             }
 
         }
