@@ -2,6 +2,7 @@ package com.example.quizapp
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -23,10 +24,10 @@ class MainActivity : AppCompatActivity() {
             WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
 
         val btnStart : Button = findViewById(R.id.btnStart)
-        val etName : TextInputEditText = findViewById(R.id.et_name)
+        val etName : EditText = findViewById(R.id.et_name)
 
         btnStart.setOnClickListener {
-            if (etName.text.isNullOrEmpty()){
+            if (etName.text.isEmpty()){
                 Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show()
             }
 
