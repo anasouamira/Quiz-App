@@ -10,4 +10,6 @@ data class Question(
     val optionTree : String,
     val optionFour : String,
     val correctAnswer : Int
+
+
 )
