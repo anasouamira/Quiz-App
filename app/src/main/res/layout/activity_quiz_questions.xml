@@ -100,7 +100,7 @@
             android:textSize="18sp"
             tools:text="Apple" />
         <TextView
-            android:id="@+id/tv_option_Tree"
+            android:id="@+id/tv_option_Three"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

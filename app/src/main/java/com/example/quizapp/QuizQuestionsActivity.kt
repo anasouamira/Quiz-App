@@ -38,6 +38,10 @@ class QuizQuestionsActivity : AppCompatActivity() {
         tvQuestion = findViewById(R.id.tv_question)
         ivImage = findViewById(R.id.iv_Image)
 
+        tvOptionOne = findViewById(R.id.tv_option_One)
+        tvOptionTwo = findViewById(R.id.tv_option_Two)
+        tvOptionThree = findViewById(R.id.tv_option_Three)
+        tvOptionFour = findViewById(R.id.tv_option_Four)
 
 
 
