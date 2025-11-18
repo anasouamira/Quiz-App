@@ -37,21 +37,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
+            android:gravity="center_horizontal"
             android:layout_marginTop="16dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <ProgressBar
                 android:id="@+id/progressBar"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:max="10"
                 android:indeterminate="false"
-                android:minHeight="50dp"
+                android:minHeight="30dp"
+                android:progressBackgroundTintMode="src_over"
                 android:progress="1"
-                android:progressTint="#03A9F4"
+                android:progressTint="#CDDC39"
                 />
 
             <TextView
@@ -59,8 +60,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="15dp"
-                android:textSize="14sp"
+                android:padding="5dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
                 android:text="0/1"
                 />
 
@@ -70,11 +72,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
+            android:background="@drawable/text_bg"
+            android:padding="10dp"
             android:gravity="center"
             android:textSize="22sp"
             android:layout_margin="10dp"
             android:textStyle="bold"
-            tools:text="What country does this flag belong to ?"
+            tools:text="What country does this flag ?"
             />
 
         <TextView

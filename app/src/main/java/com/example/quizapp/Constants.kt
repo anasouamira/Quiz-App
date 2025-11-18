@@ -12,7 +12,7 @@ object Constants {
         val questionsList = listOf(
             Question(
                 1,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_argentina,
                 "Argentina",
                 "Australia",
@@ -22,7 +22,7 @@ object Constants {
             ),
             Question(
                 2,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_brazil,
                 "Germany",
                 "India",
@@ -32,7 +32,7 @@ object Constants {
             ),
             Question(
                 3,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_belgium,
                 "Kuwait",
                 "Belgium",
@@ -42,7 +42,7 @@ object Constants {
             ),
             Question(
                 4,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_denmark,
                 "Denmark",
                 "Belgium",
@@ -52,7 +52,7 @@ object Constants {
             ),
             Question(
                 5,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_fiji,
                 "Germany",
                 "Kuwait",
@@ -62,7 +62,7 @@ object Constants {
             ),
             Question(
                 6,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_india,
                 "Belgium",
                 "brazil",
@@ -72,7 +72,7 @@ object Constants {
             ),
             Question(
                 7,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_kuwait,
                 "Belgium",
                 "Kuwait",
@@ -82,7 +82,7 @@ object Constants {
             ),
             Question(
                 8,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_new_zealand,
                 "Argentina",
                 "Australia",
@@ -92,7 +92,7 @@ object Constants {
             ),
             Question(
                 9,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_germany,
                 "Kuwait",
                 "Australia",
@@ -102,7 +102,7 @@ object Constants {
             ),
             Question(
                 10,
-                "What country does this flag belong to ?",
+                "What country does this flag ?",
                 R.drawable.ic_flag_of_australia,
                 "fiji",
                 "Australia",
