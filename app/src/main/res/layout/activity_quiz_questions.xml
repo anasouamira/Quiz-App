@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/ic_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".QuizQuestionsActivity">
@@ -119,10 +120,15 @@
             android:textSize="18sp"
             tools:text="Apple" />
         
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/submit"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
 
             />
 
