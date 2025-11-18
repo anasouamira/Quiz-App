@@ -37,6 +37,7 @@
             app:cardPreventCornerOverlap="true">
 
             <ImageView
+                android:id="@+id/iv_Image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
@@ -52,6 +53,7 @@
             android:orientation="horizontal">
 
             <ProgressBar
+                android:id="@+id/progressBar"
                 android:layout_width="0dp"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_height="wrap_content"
