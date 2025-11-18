@@ -45,6 +45,25 @@ class QuizQuestionsActivity : AppCompatActivity() {
 
 
 
+        val questionList = Constants.getQuestions()
+        var currentPosition = 1
+
+        val question : Question = questionList[currentPosition-1]
+        progressBar?.progress = currentPosition
+        tvProcess?.text = "${currentPosition}/${progressBar?.max}"
+        tvQuestion?.text = question.question
+        ivImage?.setImageResource(question.image)
+
+        tvOptionOne?.text = question.optionOne
+        tvOptionTwo?.text = question.optionTow
+        tvOptionThree?.text = question.optionTree
+        tvOptionFour?.text = question.optionFour
+
+
+
+
+
+
 
     }
 }
