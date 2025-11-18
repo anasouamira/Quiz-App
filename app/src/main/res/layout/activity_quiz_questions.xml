@@ -52,7 +52,7 @@
                 android:minHeight="30dp"
                 android:progressBackgroundTintMode="src_over"
                 android:progress="1"
-                android:progressTint="#CDDC39"
+                android:progressTint="#FF5722"
                 />
 
             <TextView
@@ -62,7 +62,9 @@
                 android:gravity="center"
                 android:padding="5dp"
                 android:textSize="25sp"
-                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="#FF5722"
                 android:text="0/1"
                 />
 
