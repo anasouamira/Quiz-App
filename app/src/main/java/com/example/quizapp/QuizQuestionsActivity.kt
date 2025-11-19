@@ -150,6 +150,9 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     selectedOptionView(it,4)
                 }
             }
+            R.id.btnSubmit ->{
+
+            }
 
         }
     }
