@@ -36,6 +36,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var tvOptionThree: TextView? = null
     private var tvOptionFour: TextView? = null
     private var btnSubmit : Button? = null
+    private var tvTrayAgain : TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,6 +59,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         tvOptionFour = findViewById(R.id.tv_option_Four)
 
         btnSubmit = findViewById(R.id.btnSubmit)
+        tvTrayAgain = findViewById(R.id.tv_trays)
 
 
         tvOptionOne?.setOnClickListener  (this)

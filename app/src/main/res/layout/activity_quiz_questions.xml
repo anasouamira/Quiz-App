@@ -17,44 +17,20 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal">
-
-            <ProgressBar
-                android:id="@+id/progressBar"
-                android:layout_width="match_parent"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_height="wrap_content"
-                android:background="@drawable/progress_text_bg"
-                android:padding="5dp"
-                android:layout_weight="1"
-                android:max="10"
-                android:indeterminate="false"
-                android:minHeight="30dp"
-                android:progressBackgroundTintMode="src_over"
-                android:progress="1"
-                android:progressTint="#FF5722"
-                />
-            <TextView
-                android:id="@+id/tv_progress"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:background="@drawable/progress_text_bg"
-                android:text="0/1"
-                />
-
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/progress_text_bg"
+            android:text="0/1"
+            />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="300dp"
@@ -71,6 +47,23 @@
                 android:contentDescription="flag image"
                 tools:src = "@drawable/ic_flag_of_argentina"/>
         </com.google.android.material.card.MaterialCardView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="wrap_content"
+            android:background="@drawable/progress_text_bg"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:max="10"
+            android:indeterminate="false"
+            android:minHeight="15dp"
+            android:progressBackgroundTintMode="src_over"
+            android:progress="1"
+            android:progressTint="#FF5722"
+            />
 
         <TextView
             android:id="@+id/tv_question"
@@ -163,7 +156,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:background="@drawable/progress_text_bg"
-                android:text="0/1"
+                android:text="0/3"
                 />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnSubmit"
