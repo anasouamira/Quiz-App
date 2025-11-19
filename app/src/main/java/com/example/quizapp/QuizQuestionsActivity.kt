@@ -167,7 +167,11 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                             mSelectedOptionPosition,
                             R.drawable.wrong_option_border_bg
                         )
-                    }else{
+                    }
+                    answerView(
+                        mSelectedOptionPosition,
+                        R.drawable.correct_option_border_bg
+                    )
 
                     }
                 }
