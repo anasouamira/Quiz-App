@@ -89,9 +89,9 @@
 
         <TextView
             android:id="@+id/tv_option_One"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
@@ -100,9 +100,9 @@
             tools:text="Apple" />
         <TextView
             android:id="@+id/tv_option_Two"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
@@ -111,9 +111,9 @@
             tools:text="Apple" />
         <TextView
             android:id="@+id/tv_option_Three"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
@@ -122,9 +122,9 @@
             tools:text="Apple" />
         <TextView
             android:id="@+id/tv_option_Four"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
@@ -134,8 +134,8 @@
         
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSubmit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_bg"
             android:text="@string/submit"

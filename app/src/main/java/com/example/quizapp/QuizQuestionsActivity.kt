@@ -73,7 +73,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun setQuestion(){
-
+        defaultOptionView()
         val question: Question = mQuestionList!![mCurrentPosition - 1]
         progressBar?.progress = mCurrentPosition
         tvProcess?.text = "${mCurrentPosition}/${progressBar?.max}"
@@ -88,7 +88,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         if(mCurrentPosition == mQuestionList!!.size){
             btnSubmit?.text = "FINISH"
         }else{
-            btnSubmit?.text = "NEXT"
+            btnSubmit?.text = "SUBMIT"
         }
     }
 
@@ -153,7 +153,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             R.id.btnSubmit ->{
-                if (mCurrentPosition == 0){
+                if (mSelectedOptionPosition == 0){
                     mCurrentPosition++
 
                     when{
@@ -171,7 +171,14 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     }
                     answerView(
                         question.correctAnswer,
-                        R.drawable.correct_option_border_bg)
+                        R.drawable.correct_option_border_bg
+                    )
+                    if(mCurrentPosition == mQuestionList!!.size){
+                        btnSubmit?.text = "FINISH"
+                    }else{
+                        btnSubmit?.text = "GO TO NEXT QUESTION"
+                    }
+                    mSelectedOptionPosition = 0
                 }
 
             }
