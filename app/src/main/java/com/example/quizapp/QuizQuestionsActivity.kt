@@ -88,7 +88,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         if(mCurrentPosition == mQuestionList!!.size){
             btnSubmit?.text = "FINISH"
         }else{
-            btnSubmit?.text = "SUBMIT"
+            btnSubmit?.text = "SELECT"
         }
     }
 
@@ -153,33 +153,49 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             R.id.btnSubmit ->{
-                if (mSelectedOptionPosition == 0){
-                    mCurrentPosition++
 
-                    when{
-                        mCurrentPosition <= mQuestionList!!.size ->{
-                            setQuestion()
+                outer@for (currentPosition in mCurrentPosition..mQuestionList!!.size){
+
+                    for (tryAgain in 1..3){
+
+                        if (mSelectedOptionPosition == 0){
+                            when{
+                                mCurrentPosition <= mQuestionList!!.size ->{
+                                    setQuestion()
+                                }
+                            }
+                        }else{
+                            val question = mQuestionList?.get(currentPosition -1)
+                            if (question!!.correctAnswer != mSelectedOptionPosition){
+                                answerView(
+                                    mSelectedOptionPosition,
+                                    R.drawable.wrong_option_border_bg
+                                )
+                                btnSubmit?.text = "SELECT AGAIN"
+                                mSelectedOptionPosition = 0
+                            }else{
+                                answerView(
+                                    question.correctAnswer,
+                                    R.drawable.correct_option_border_bg
+                                )
+                                if(mCurrentPosition == mQuestionList!!.size){
+                                    btnSubmit?.text = "FINISH"
+                                }else{
+                                    btnSubmit?.text = "GO TO NEXT QUESTION"
+                                }
+                                mSelectedOptionPosition = 0
+                            }
+
                         }
+
+
                     }
-                }else{
-                    val question = mQuestionList?.get(mCurrentPosition -1)
-                    if (question!!.correctAnswer != mSelectedOptionPosition){
-                        answerView(
-                            mSelectedOptionPosition,
-                            R.drawable.wrong_option_border_bg
-                        )
-                    }
-                    answerView(
-                        question.correctAnswer,
-                        R.drawable.correct_option_border_bg
-                    )
-                    if(mCurrentPosition == mQuestionList!!.size){
-                        btnSubmit?.text = "FINISH"
-                    }else{
-                        btnSubmit?.text = "GO TO NEXT QUESTION"
-                    }
-                    mSelectedOptionPosition = 0
+
+
+
+
                 }
+
 
             }
         }
