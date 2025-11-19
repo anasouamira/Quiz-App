@@ -170,14 +170,10 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     }
                     answerView(
                         mSelectedOptionPosition,
-                        R.drawable.correct_option_border_bg
-                    )
-
-                    }
+                        R.drawable.correct_option_border_bg)
                 }
 
             }
-
         }
     }
     private fun answerView(answer : Int , drawableView: Int){
@@ -203,7 +199,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     this,
                     drawableView
                 )
-
         }
 
     }
