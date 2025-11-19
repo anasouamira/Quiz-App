@@ -18,6 +18,22 @@
         android:padding="16dp">
 
 
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/progress_text_bg"
+            android:text="0/1"
+            />
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="300dp"
             android:layout_height="200dp"
@@ -55,18 +71,6 @@
                 android:progressTint="#FF5722"
                 />
 
-            <TextView
-                android:id="@+id/tv_progress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="5dp"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:background="#FF5722"
-                android:text="0/1"
-                />
 
         </LinearLayout>
         <TextView
@@ -129,6 +133,7 @@
             tools:text="Apple" />
         
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
