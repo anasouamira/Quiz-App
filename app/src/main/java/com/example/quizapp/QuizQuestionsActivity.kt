@@ -2,6 +2,7 @@ package com.example.quizapp
 
 import android.graphics.Color
 import android.graphics.Typeface
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
@@ -151,10 +152,56 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             R.id.btnSubmit ->{
+                if (mCurrentPosition == 0){
+                    mCurrentPosition++
+
+                    when{
+                        mCurrentPosition <= mQuestionList!!.size ->{
+                            setQuestion()
+                        }
+                    }
+                }else{
+                    val question = mQuestionList?.get(mCurrentPosition -1)
+                    if (question!!.correctAnswer == mSelectedOptionPosition){
+                        answerView(
+                            mSelectedOptionPosition,
+                            R.drawable.wrong_option_border_bg
+                        )
+                    }else{
+
+                    }
+                }
 
             }
 
         }
+    }
+    private fun answerView(answer : Int , drawableView: Int){
+
+        when(answer){
+            1 ->
+                tvOptionOne?.background = ContextCompat.getDrawable(
+                    this,
+                    drawableView
+                )
+            2 ->
+                tvOptionTwo?.background = ContextCompat.getDrawable(
+                    this,
+                    drawableView
+                )
+            3 ->
+                tvOptionThree?.background = ContextCompat.getDrawable(
+                    this,
+                    drawableView
+                )
+            4 ->
+                tvOptionFour?.background = ContextCompat.getDrawable(
+                    this,
+                    drawableView
+                )
+
+        }
+
     }
 
 }
