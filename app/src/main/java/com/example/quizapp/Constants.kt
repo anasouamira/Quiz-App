@@ -68,7 +68,7 @@ object Constants {
                 "brazil",
                 "New Zealand",
                 "India",
-                3
+                4
             ),
             Question(
                 7,

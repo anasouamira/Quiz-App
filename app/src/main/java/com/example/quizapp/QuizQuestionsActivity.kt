@@ -20,7 +20,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var mCurrentPosition: Int = 1
     private var mQuestionList: ArrayList<Question>? = null
     private var mSelectedOptionPosition: Int = 0
-    private var maxToTray : Int =  1
+    private var maxToTray : Int =  0
     private var goToNextQuestion = false
 
     private var progressBar: ProgressBar? = null
@@ -83,6 +83,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         tvOptionTwo?.text = question.optionTow
         tvOptionThree?.text = question.optionTree
         tvOptionFour?.text = question.optionFour
+        tvTrayAgain?.text = "0/3"
 
         if (mCurrentPosition == mQuestionList!!.size) {
             btnSubmit?.text = "FINISH"
@@ -170,19 +171,22 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                         answerView(mSelectedOptionPosition, R.drawable.wrong_option_border_bg)
                         maxToTray++
 
-                        if (maxToTray == 3) {
+                        if (maxToTray >= 3) {
                             btnSubmit?.text = "GO TO NEXT QUESTION"
                             goToNextQuestion = true
-                            maxToTray = 1
+                            maxToTray = 0
+                            tvTrayAgain?.text = "3/3"
                         } else {
                             btnSubmit?.text = "SELECT AGAIN"
+                            tvTrayAgain?.text = "$maxToTray/3"
                         }
 
                     } else {
                         answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
                         btnSubmit?.text = "GO TO NEXT QUESTION"
+                        tvTrayAgain?.text = "1/3"
                         goToNextQuestion = true
-                        maxToTray = 1
+                        maxToTray = 0
                     }
 
                 } else {
