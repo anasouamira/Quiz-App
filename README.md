@@ -7,7 +7,7 @@ You can test your knowledge about capitals, flags, and famous places.
 ---
 ## 📱 Screenshots
 
-<img src="" width="200" alt=""/>
+<img src="Screenshot1_App.jpg" width="200" alt=""/>
 
 ---
 ## 🛠 Features
@@ -21,4 +21,4 @@ You can test your knowledge about capitals, flags, and famous places.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/MyCalculatorApp.git
+https://github.com/anasouamira/Quiz-App.git
