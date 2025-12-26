@@ -70,7 +70,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         setQuestion()
 
     }
-
     private fun setQuestion() {
         defaultOptionView()
         val question: Question = mQuestionList!![mCurrentPosition - 1]
@@ -91,7 +90,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             btnSubmit?.text = "SELECT"
         }
     }
-
     private fun defaultOptionView() {
         val options = ArrayList<TextView>()
         tvOptionOne?.let {
@@ -117,7 +115,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         }
 
     }
-
     private fun selectedOptionView(tv: TextView, selectedOptionNum: Int) {
         defaultOptionView()
         mSelectedOptionPosition = selectedOptionNum
@@ -205,7 +202,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
-
     private fun answerView(answer: Int, drawableView: Int) {
 
         when (answer) {
